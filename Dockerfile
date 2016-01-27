@@ -4,6 +4,8 @@ MAINTAINER Max Metral <max@pyralis.com>
 
 ENV CONSUL_VERSION 0.6.3
 ENV CONSUL_SHA256 b0532c61fec4a4f6d130c893fd8954ec007a6ad93effbe283a39224ed237e250
+# Used in the agent startup command
+ENV CONSUL_SERVER consul
 
 # Install consul and setup executable
 RUN apk --update add curl ca-certificates && \
